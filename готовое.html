@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>EREMENKO PRODUCTION | Реклама</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+}
+
+/* Header с фоновым видео */
+header {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+header video.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+header h1,
+header p,
+header button {
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 64px;
+    letter-spacing: 2px;
+}
+
+p {
+    color: #aaa;
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px 40px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <!-- Фоновое видео -->
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="1234567.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+
+    <!-- Текст поверх видео -->
+    <h1>EREMENKO PRODUCTION</h1>
+    <p>PR-менеджер</p>
+    <a href="https://t.me/EREMENKO_VITALY" target="_blank">
+        <button>Связаться</button>
+    </a>
+</header>
+
+<div class="section">
+    <div class="title">Обо мне</div>
+    <p>Создаю рекламу, которая привлекает внимание и продаёт. Работаю с визуалом, контентом и клиентами.</p>
+</div>
+
+<div class="section">
+    <div class="title">Видео работы</div>
+    <div class="grid">
+
+        <div class="card">
+            <video autoplay muted loop playsinline style="width:100%; border-radius:10px;">
+                <source src="IMG_5698.MP4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="card">
+            <video autoplay muted loop playsinline style="width:100%; border-radius:10px;">
+                <source src="IMG_3816.mov" type="video/mp4">
+            </video>
+        </div>
+
+    </div>
+</div>
+
+<div class="section">
+    <div class="title">Фото работы</div>
+    <div class="grid">
+        <div class="card">
+            <img src="photo_2026-03-18 05.05.20.jpeg" style="width:100%; border-radius:10px;">
+        </div>
+        <div class="card">
+            <img src="photo_2026-03-18 05.05.23.jpeg" style="width:100%; border-radius:10px;">
+        </div>
+    </div>
+</div>
+
+
+
+<div class="section">
+    <div class="title">Контакты</div>
+    <a href="https://t.me/EREMENKO_VITALY" target="_blank">
+        <button>Написать в Telegram</button>
+    </a>
+</div>
+
+</body>
+</html>
